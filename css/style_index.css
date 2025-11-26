@@ -1,13 +1,19 @@
+/* DISPOSITIVOS PARA FAZER O MEDIA DE RESPONSIVIDADE MOBILE
+GALAXY28,
+IPHONE SE  */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;;
+    font-family: "Inter", sans-serif;
+    ;
 }
 
 body {
     width: 100vw;
     height: 100vh;
+    background-color: #F8F9FA;
 }
 
 header {
@@ -44,7 +50,6 @@ main {
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(1.3px);
     animation: slide 50s infinite;
 }
 
@@ -52,43 +57,43 @@ main {
 
     0%,
     14% {
-        background-image: url(/img/goldenGateMobile.jpg);
+        background-image: url(/img/goldenGate.jpg);
         background-position: 15% 0%;
     }
 
     15%,
     29% {
-        background-image: url(/img/esfingeMobile.jpg);
+        background-image: url(/img/esfinge.jpg);
         background-position: 40% 0%;
     }
 
     30%,
     44% {
-        background-image: url(/img/torreEiffelMobile.jpg);
+        background-image: url(/img/torreEiffel.webp);
         background-position: 70% 0%;
     }
 
     45%,
     59% {
-        background-image: url(/img/cristoRedentorMobile.jpg);
+        background-image: url(/img/cristoRedentor.jpg);
         background-position: 0% 0%;
     }
 
     60%,
     74% {
-        background-image: url(/img/louvreMobile.jpg);
+        background-image: url(/img/louvre.jpg);
         background-position: 50% 0%;
     }
 
     75%,
     89% {
-        background-image: url(/img/monteFujiMobile.jpg);
+        background-image: url(/img/monteFuji.jpg);
         background-position: 45% 0%;
     }
 
     90%,
     100% {
-        background-image: url(/img/sydneyMobile.jpg);
+        background-image: url(/img/sydney.jpg);
         background-position: 40% 0%;
     }
 }
@@ -107,6 +112,7 @@ main {
     padding: 15px;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.719);
+    box-shadow: 5px 10px 15px rgb(0, 0, 0);
 }
 
 #cardLogin span {
@@ -320,7 +326,7 @@ main {
     justify-content: center;
     width: 100%;
     margin-bottom: 10px;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .containerButton {
@@ -346,4 +352,90 @@ footer {
     width: 100%;
     height: 90px;
     background-color: black;
+}
+
+
+@media (min-width: 768px) {
+    #cardLogin {
+        width: 50%;
+        height: 50%;
+    }
+
+    #cardRegister {
+        width: 60%;
+        height: 65%;
+    }
+
+    #cardResultRegister {
+        width: 55%;
+        height: 15%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .backgroundImg {
+        display: none;
+    }
+
+    .containerCard {
+        display: flex;
+        flex-direction: column;
+        width: calc(80% - 20px);
+        height: 90%;
+        padding: 35px 15px 0px 15px;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.459);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.459);
+    }
+
+    .containerImg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 85%;
+    }
+
+    .containerImg img {
+        width: 95%;
+        height: 85%;
+    }
+
+    .containerLocation {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        height: 10%;
+        padding-right: 25px;
+        gap: 10px;
+        font-size: 1.8rem;
+    }
+
+    .containerLocation img {
+        width: 25px;
+        height: 35px;
+    }
+
+    .containerCard p {
+        width: 100%;
+        height: 15%;
+        padding: 0px 15px 0px 20px;
+    }
+
+    main {
+        padding: 0px 30px 0px 30px;
+        gap: 20px;
+        background: #FC7A33;
+        background: linear-gradient(0deg, rgba(252, 122, 51, 1) 0%, rgba(248, 249, 250, 1) 100%);
+    }
+
+    #cardLogin {
+        position: static;
+        width: 30%;
+        height: 70%;
+        background-color: rgba(255, 255, 255, 0.459);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.459);
+    }
+
 }

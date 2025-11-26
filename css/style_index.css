@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 170px);
+}
+
+#filterBlack {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+.backgroundImg {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1.3px);
+    animation: slide 50s infinite;
+}
+
+@keyframes slide {
+
+    0%,
+    14% {
+        background-image: url(/img/goldenGateMobile.jpg);
+        background-position: 15% 0%;
+    }
+
+    15%,
+    29% {
+        background-image: url(/img/esfingeMobile.jpg);
+        background-position: 40% 0%;
+    }
+
+    30%,
+    44% {
+        background-image: url(/img/torreEiffelMobile.jpg);
+        background-position: 70% 0%;
+    }
+
+    45%,
+    59% {
+        background-image: url(/img/cristoRedentorMobile.jpg);
+        background-position: 0% 0%;
+    }
+
+    60%,
+    74% {
+        background-image: url(/img/louvreMobile.jpg);
+        background-position: 50% 0%;
+    }
+
+    75%,
+    89% {
+        background-image: url(/img/monteFujiMobile.jpg);
+        background-position: 45% 0%;
+    }
+
+    90%,
+    100% {
+        background-image: url(/img/sydneyMobile.jpg);
+        background-position: 40% 0%;
+    }
+}
+
+
+.containerCard {
+    display: none;
+}
+
+#cardLogin {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 60%;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+
+#cardLogin span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.containerInputsLogin {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    height: 70%;
+}
+
+.containerInputsLogin input {
+    all: unset;
+    display: flex;
+    padding-left: 15px;
+    width: 95%;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.containerButtons {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 15px;
+    width: 100%;
+    height: 20%;
+}
+
+.containerButtons button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: white;
+    border-radius: 25px;
+    color: rgb(51, 51, 51);
+}
+
+#register {
+    width: 140px;
+}
+
+#enter {
+    width: 100px;
+}
+
+#cardRegister {
+    position: absolute;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    width: 95%;
+    height: 75%;
+    background-color: rgba(255, 255, 255, 0.863);
+    border-radius: 30px;
+}
+
+.containerClose {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 60px;
+}
+
+.containerClose p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    font-size: 1.3rem;
+}
+
+.containerClose img {
+    width: 15px;
+    margin-bottom: 20px;
+}
+
+.containerInputsRegister {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+.containerInputSpan {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    height: 70px;
+}
+
+#cardRegister span {
+    height: 30px;
+    padding-left: 15px;
+    height: 15px;
+    color: red;
+    opacity: 1;
+}
+
+.containerInputsRegister input {
+    all: unset;
+    width: 95%;
+    height: 45px;
+    padding-left: 15px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.containerPassInput {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    padding-right: 20px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.containerInputsRegister div img {
+    width: 30px;
+    height: 20px;
+    z-index: 10;
+}
+
+.containerPassInput img:hover+.notView {
+    height: 0px;
+}
+
+.containerConfirmPass {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+    width: 100%;
+}
+
+.notView {
+    width: 4px;
+    height: 35px;
+    margin-left: -17px;
+    margin-bottom: 2px;
+    background-color: #919191a1;
+    transform: rotate(45deg);
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.containerCheckbox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    gap: 10px;
+    padding: 15px 0px 20px 15px;
+}
+
+.containerCheckbox label {
+    text-decoration: underline;
+}
+
+#registerGo {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+#cardResultRegister {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 360px;
+    height: 130px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.925);
+}
+
+#cardResultRegister img {
+    width: 15px;
+}
+
+#cardResultRegister span {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.containerButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+}
+
+#goLogin {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.685);
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    background-color: black;
+}

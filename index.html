@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="filterBlack"></div>
+    <header>
+        <h1>TRAVELOG</h1>
+        <img src="" alt="">
+    </header>
+    <main>
+        <div class="backgroundImg"></div>
+        <div class="containerCard">
+            <div class="containerImg">
+                <img src="/img/goldenGate.jpg" alt="">
+                <div class="containerLocation">
+                    <img src="/img/location.png" alt="">
+                    <span>Califórnia - USA</span>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quos quibusdam maiores ad dolor odit.
+                Sunt, deleniti optio.</p>
+        </div>
+        <div id="cardLogin">
+            <span>Login</span>
+            <div class="containerInputsLogin">
+                <input type="text" id="email" placeholder="e-mail">
+                <input type="text" id="pass" placeholder="senha">
+            </div>
+            <div class="containerButtons">
+                <button id="register">Cadastre-se</button>
+                <button id="enter">Entrar</button>
+            </div>
+        </div>
+        <div id="cardRegister">
+            <div class="containerClose">
+                <p>Cadastro</p>
+                <img src="/img/closeBlack.png" alt="">
+            </div>
+            <div class="containerInputsRegister">
+                <div class="containerInputSpan">
+                    <input type="text" id="name" placeholder="nome">
+                    <span>Nome inválido</span>
+                </div>
+                <div class="containerInputSpan">
+                    <input type="text" id="nickname" placeholder="apelido">
+                    <span>Apelido inválido</span>
+                </div>
+                <div class="containerInputSpan">
+                    <input type="text" id="phone" placeholder="telefone">
+                    <span>Telefone inválido</span>
+                </div>
+                <div class="containerInputSpan">
+                    <input type="text" id="e_mail" placeholder="e-mail">
+                    <span>E-mail inválido</span>
+                </div>
+                <div class="containerPassInput">
+                    <input type="text" id="password" placeholder="senha">
+                    <img src="/img//eye.png" alt="">
+                    <div class="notView"></div>
+                </div>
+                <div class="containerConfirmPass">
+                    <p>Confirme sua senha</p>
+                    <div class="containerPassInput">
+                        <input type="text" id="confirmPass" placeholder="senha">
+                        <img src="/img//eye.png" alt="">
+                        <div class="notView"></div>
+                    </div>
+                    <span>Senha incorreta</span>
+                </div>
+            </div>
+            <div class="containerCheckbox">
+                <input type="checkbox" id="checkTerms">
+                <label for="checkTerms">Li e aceito os termos e condições</label>
+            </div>
+            <button id="registerGo">Cadastrar</button>
+        </div>
+        <div id="cardResultRegister">
+            <img src="/img/closeBlack.png" alt="">
+            <span>Cadastro concluído com sucesso!</span>
+            <div class="containerButton">
+                <button id="goLogin">Realizar Login</button>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
